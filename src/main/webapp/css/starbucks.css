@@ -76,14 +76,101 @@ header{
 	
 	
 }
+.post-it{
+	position: fixed;
+	width:140px;
+	height :214px;
+	top : 200px;
+	right : 5%;
+}
+.beverage{
+	display: flex;	
+	height: 650px;
+	justify-content: center;
+	column-gap:  2rem;
+}	
+.b1,.b3{
+	align-self: center;
+}
+.more{
+	color :white;
+	border: 1px solid white;
+	border-radius: 3px;
+	width : 40%;
+	margin:  2rem auto;
+	text-align: center;
+	padding : .5rem;
+	transition : all .3s ease-in-out; 
+	font-size: .725rem;
+}
+.more:hover{
+	background: white;
+	color: #C2D52E;
+	text-decoration: underline;
+}
+.b2,.b4{
+	margin-top : 3rem;
+}
+.promotion{
+	position: relative;
+}
 
-
-
-
-
-
-
-
+.promo-bg{
+	display: flex;
+	height: 700px;
+	position: absolute;
+	top :0;
+	z-index: -1;
+	width: 100%;
+}
+.left-bg{
+	background: #C2D52E;
+	flex: 5.4;
+}
+.right-bg{
+	background: #87C9E3;
+	flex :4.6;
+}
+.notice{
+	display: flex;
+	height: 50px;
+	overflow: hidden; 		/* 나중에 지워 */
+}
+.news-area {
+	flex:5.4;
+	background: #000;
+	color: white;
+}
+.promo-area{
+	flex :4.6;
+	background: #f2f2f2;
+	
+}
+.area-items{
+	display: flex;
+	float: right;
+}
+.area-items h2{
+	font-size: 1rem;
+}
+.area-items ul {
+	overflow: hidden;
+}
+.area-items ul li{
+	margin: 30px 0;
+}
+.area-items button{
+	width: 30px;
+	height: 30px;
+	background: none;
+	border: 1px solid #ccc;
+	border-radius: 50%;
+	color: #ccc;
+}
+.promo-items{
+	display: flex;
+	float : left;	
+} 
 
 
 
