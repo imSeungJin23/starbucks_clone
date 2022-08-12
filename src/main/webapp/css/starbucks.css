@@ -33,9 +33,19 @@ header{
 	margin-left :auto;
 }
 .nav-top{
-	margin :1rem 0;
-	
+	margin :1rem 0;	
 }
+/* 검색창 검색버튼 */
+[type=search]{
+	width :30px;
+	height: 30px;
+}
+[type=image]{
+	position : absolute;
+	top: 5px;
+	left: 5px;
+}
+
 .nav-top, .nav-bottom{
 	display: flex;
 }
@@ -59,6 +69,9 @@ header{
 }
 .nav-top li:nth-child(5)::after {
 	width: 0;
+}
+.nav-top li:nth-last-child(1){
+	position: relative;
 }
 .nav-bottom a {
 	text-transform:uppercase;
