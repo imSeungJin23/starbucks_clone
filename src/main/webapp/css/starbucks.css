@@ -4,8 +4,12 @@
 	margin :0;
 	padding :0;
 }
+html{font-size  :20px;}  /* 생략하면 항상 16px */
+
+
 body{
 	color: #333;
+	font-size: 1rem;
 }
 ul{
 	list-style-type: none;
@@ -28,6 +32,7 @@ header{
 	margin : 0 auto;	
 	display: flex;
 	padding : 1rem 0;
+	
 }
 .site-nav{
 	margin-left :auto;
@@ -91,6 +96,7 @@ header{
 	height :214px;
 	top : 200px;
 	right : 5%;
+	z-index  :9999;
 }
 .beverage{
 	display: flex;	
@@ -112,9 +118,15 @@ header{
 	transition : all .3s ease-in-out; 
 	font-size: .725rem;
 }
+
 .more:hover{
 	background: white;
 	color: #C2D52E;
+	text-decoration: underline;
+}
+.more2:hover{
+	background: white;
+	color: #085452;
 	text-decoration: underline;
 }
 .b2,.b4{
@@ -157,6 +169,7 @@ header{
 }
 .area-items{
 	display: flex;
+	align-items : center;
 	float: right;
 }
 .area-items h2{
@@ -164,28 +177,159 @@ header{
 }
 .area-items ul {
 	overflow: hidden;
+	height: 50px;
 }
 .area-items ul li{
-	margin: 30px 0;
+	margin: 15px 0;
+	margin-left : 1rem;
 }
 .area-items button{
-	width: 30px;
-	height: 30px;
+	font-size : 1.250rem;
+	width: 36px;
+	height: 36px;
 	background: none;
 	border: 1px solid #ccc;
 	border-radius: 50%;
 	color: #ccc;
+	margin-right : 1rem;
 }
 .promo-items{
 	display: flex;
-	float : left;	
+	float : left;
+	align-items: center;
+	height: 50px;
+	margin : 0 0 0 5rem;	
 } 
+.promo-items h2{
+	font-size: 1rem;
+}
+.promo-items button{
+	border : 0;
+	background: none;
+	width: 30px;
+	height: 30px;
+	margin:  0 0 0 4rem;
+}
+.benefit{
+	background: #1E3932;
+	color:white;
+	font-size : .875rem;
+}
+.benefit .wrap {
+	column-gap: 36px;
+}
+.reward-logo{
+	flex:1
+}
+.reward-details{
+	flex : 4;
+}
+.membership{
+	position: relative;
+	border-bottom : 1px solid #f2f2f2;
+	padding-bottom : 1rem;
+	margin-bottom: 1rem;
+} 
+.membership p {
+	letter-spacing: -1px;
+}
+.membership p:nth-child(1){
+	margin-bottom: 1rem;
+}
+.membership p:nth-child(2){
+	font-size: .875rem;
+}
+.membership p:nth-child(3){
+	font-size: .875rem;
+}
+.btns{
+	position: absolute;
+	display: flex;
+	right: 0;
+	bottom: 1rem;
+	column-gap: 1rem;
+}
+.btns li:nth-child(1) a{
+	color: white;
+	background: #00704A;
+	border : 2px solid #00704A;
+	padding : .5rem 1rem;
+	font-size :.725rem;
+	border-radius: 6px;
+	
+}
+.btns li:nth-child(2) a{
+	color: white;
+	border : 2px solid white;
+	padding : .5rem 1rem;
+	font-size :.725rem;
+	border-radius: 6px;
+}
+.giftcard{
+	position: relative;
+}
+.giftcard p {
+	font-size: .7rem;
+	letter-spacing: -1px;
+}
+.gift-button{
+	position: absolute;
+	right: 0;
+	top :0;
+}
+.gift-button a{
+	color: white;
+	border : 2px solid white;
+	padding : .5rem 1rem;
+	font-size :.725rem;
+	border-radius: 6px;
+}
+.new-beans{
+	background: url("../images/2022_Summer2_bean_bg.jpg") no-repeat center / cover;
+	padding : 3rem 0;
+}
+.new-beans .wrap{
+	justify-content: space-between;
+}
+.beans-txt{
+	color :white;
+	margin :0 1rem 0 0;
+	letter-spacing: -2px;
+	line-height: 1.5;
+}
+.beans-txt p:nth-child(1){
+	font-size: .625rem;
+	color : #f3f3f3;
+}
+.beans-txt p:nth-child(2){
+	font-size: 1.250rem;
+	color : #fff;
+}
+.beans-txt p:nth-child(3){
+	font-size: .825rem;
+	color : #efefef;
+}
+.beans-txt .more{
+	margin: 1rem 0;
+}
+.beans-txt .more:hover {
+	color: #085452;
+}
 
-
-
-
-
-
-
+@media screen and (max-width : 480px){
+	html {font-size : 16px;}
+}
+@media screen and (max-width : 425px){
+	html {font-size : 18px;}
+}
+@media screen and (max-width : 375px){
+	html {font-size : 20px;}
+}
+@media screen and (max-width : 360px){
+	html {font-size : 22px;}
+}
+@media screen and (max-width : 320px){
+	html {font-size : 24px;}
+}
 
 
